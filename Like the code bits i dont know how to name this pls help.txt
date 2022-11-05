@@ -26,7 +26,7 @@ const html = `<!DOCTYPE html>
         <p> 2022.10.01: HTML and HYPERLINKS YAY! </p>
         <p> 2022.10.09: GANYU!!!</p>
         <p> 2022.10.29: Fixed link, broke spacing. </p>
-        <p> 2022.11.05: Fixed Spacing. 
+        <p> 2022.11.05: Fixed Spacing. Created Github repo. <a href="https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/">https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/</a></p> 
     </div>
 </body>`;
 
