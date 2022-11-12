@@ -2,6 +2,12 @@ const html = `<!DOCTYPE html>
 <head>
       <title>bruh</title>
 </head>
+<style>
+.changelog{text-align: center}
+    p {color:white}
+    h1 {color:white}
+    a {color:white}
+</style>
 <body style="background-color:black;">
     <h1>Hello World</h1>
     <p>//todo: make this pretty </p>
@@ -23,3 +29,18 @@ const html = `<!DOCTYPE html>
         <p> 2022.11.05: Fixed Spacing. Created Github repo. <a href="https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/">https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/</a></p> 
     </div>
 </body>`;
+async function handleRequest(request) {
+  //const views = await KV.get("views");
+
+  //await KV.put("views", parseInt(views) + 1);
+  
+  return new Response(html, {
+    headers: {
+      'content-type': 'text/html;charset=UTF-8',
+    },
+  });
+}
+
+addEventListener('fetch', event => {
+  return event.respondWith(handleRequest(event.request));
+});
