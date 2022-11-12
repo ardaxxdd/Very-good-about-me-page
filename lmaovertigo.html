@@ -26,21 +26,7 @@ const html = `<!DOCTYPE html>
         <p> 2022.10.01: HTML and HYPERLINKS YAY! </p>
         <p> 2022.10.09: GANYU!!!</p>
         <p> 2022.10.29: Fixed link, broke spacing. </p>
-        <p> 2022.11.05: Fixed Spacing. Created Github repo. <a href="https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/">https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/</a></p> 
+        <p> 2022.11.05: Fixed Spacing. Created Github repo. <a href="https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/">https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-workers/</a></p>
+		<p> 2022.11.12: Moved to Cloudflare Pages. Github repo changed. <a href="https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-pages/">https://github.com/ardaxxdd/Very-good-about-me-page-cloudflare-pages/</a></p>
     </div>
 </body>`;
-async function handleRequest(request) {
-  //const views = await KV.get("views");
-
-  //await KV.put("views", parseInt(views) + 1);
-  
-  return new Response(html, {
-    headers: {
-      'content-type': 'text/html;charset=UTF-8',
-    },
-  });
-}
-
-addEventListener('fetch', event => {
-  return event.respondWith(handleRequest(event.request));
-});
