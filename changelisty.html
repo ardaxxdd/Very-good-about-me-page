@@ -1,28 +1,37 @@
 <head>
-    <title>About Me - Lmaovertigo</title>
+    <title>Changelisty - Lmaovertigo</title>
 	<link rel="icon" type="image/x-icon" href="ganyu.ico">
 	<meta name='description' content='Very bad about me page using cloudflare pages.'>
-	<meta http-equiv='content-language' content='en-gb'>	  
+	<meta http-equiv='content-language' content='en-gb'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 </head>
 <style>
 p {color:white; text-align: center;}
 h1 {color:white; text-align: center;}
-a {color:white; text-align: center;} 
+a {color:white; margin: auto; display: block; text-align: center;}
 button{
   background-color: #101010;
-  display: block;
-  margin: auto;
   border: none;
   color: white;
+  width: 39%; /* fix this pls */
   padding: 16 32;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
   font-size: 16px;
+  margin-left: 30%;
+  margin-right: 30%;
+  cursor: pointer;
+}	
+button:hover {
+  background-color: #101010;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 0px 40px 0 rgba(63,63,63,1);
+  color: white;
 }
 </style>
 <body style="background-color:black;">
 <h1> Changelisty </h1>
-<button><a style= "text-decoration: none"; href="index.html">Main Menu</a></button>
+<button type="submit" onclick="window.location='index.html'">Main Menu</button>
 <p> 2022.10.01: HTML and HYPERLINKS YAY! </p>
 <p> 2022.10.09: GANYU!!!</p>
 <p> 2022.10.29: Fixed link, broke spacing. </p>
@@ -32,4 +41,5 @@ button{
 <p> 2022.11.15: Changelisty moved. </p>
 <p> 2022.11.16: Multiple pages. </p>
 <p> 2023.05.17: Improvements & search engine thingamajig </p>
+<p> 2023.05.18: Moar Improvements & "responsive web design"</p>
 </body>

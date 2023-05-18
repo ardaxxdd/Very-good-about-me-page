@@ -3,22 +3,30 @@
 	<link rel="icon" type="image/x-icon" href="ganyu.ico">
 	<meta name='description' content='Very bad about me page using cloudflare pages.'> 
 	<meta http-equiv='content-language' content='en-gb'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <style>
-p {color:white}
-h1 {color:white}
-a {color:white}
-
+p {color:white; margin: auto; text-align: center;}
+h1 {color:white; margin: auto; text-align: center;}
+a {color:white; margin: auto; text-align: center;}
+img {margin: auto; display: block; text-align: center;} 
 button{
   background-color: #101010;
   border: none;
   color: white;
+  width: 39%; /* fix this pls */
   padding: 16 32;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }	
+button + button {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
 button:hover {
   background-color: #101010;
@@ -28,14 +36,14 @@ button:hover {
 </style>
 <body style="background-color:black;">
     <h1>Hello World</h1>
-	<button><a style= "text-decoration: none"; href="changelisty.html">Changelisty</a></button>
-	<button><a style= "text-decoration: none"; href="random.html">random</a></button>
+	<button style= "margin-left: 10%; margin-right: 0%;" onclick="window.location='changelisty.html'">Changelisty</button>
+	<button style= "margin-left: 0%; margin-right: 10%;"onclick="window.location='random.html'">random</button>
     <p>//todo: make this pretty </p>
     <p> Mail: Kowichine11@gmail.com </p>
     <p>Discord: oh, ok#2517 </p>
     <p>Genshin EU: 706054981 </p>
     <p>Steam Friend: 338086989 </p>
-    <p>Steam Trade:<a href="https://steamcommunity.com/tradeoffer/new/?partner=338086989&token=TuIiZVlg">https://steamcommunity.com/tradeoffer/new/?partner=338086989&token=TuIiZVlg</a></p>
+    <p>Steam Trade: <a href="https://steamcommunity.com/tradeoffer/new/?partner=338086989&token=TuIiZVlg">https://steamcommunity.com/tradeoffer/new/?partner=338086989&token=TuIiZVlg</a></p>
     <picture>
         <img src="ganyu.png" alt="Ganyu from Genshin Impact using Amos Bow drawn with paint"style="width:auto;">
     </picture>

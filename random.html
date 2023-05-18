@@ -1,28 +1,36 @@
 <head>
-    <title>About Me - Lmaovertigo</title>
+    <title>Random - Lmaovertigo</title>
 	<link rel="icon" type="image/x-icon" href="ganyu.ico">
 	<meta name='description' content='Very bad about me page using cloudflare pages.'> 
 	<meta http-equiv='content-language' content='en-gb'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
 p {color:white; text-align: center;}
 h1 {color:white; text-align: center;}
 a {color:white; text-align: center;} 
+img {margin: auto; display: block; text-align: center;} 
 button{
+	background-color: #101010;
+	border: none;
+	color: white;
+	margin: auto;
+	width:  620; /* fix this pls */
+	padding: 16 32;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	cursor: pointer;
+}	
+button:hover {
   background-color: #101010;
-  border: none;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 0px 40px 0 rgba(63,63,63,1);
   color: white;
-  padding: 16 32;
-  text-align: center;
-  text-decoration: none;
-  display: grid;
-  font-size: 16px;
 }
 </style>
 <h1> Random </h1>
 <body style="background-color:black;">
-	<button><a style= "text-decoration: none"; href="index.html">Main Menu</a></button>
-	<picture>
-		<img src="yae.png" alt="Yae Miko from Genshin Impact using Kagura Verity drawn with paint" style="width:auto;>"
-	</picture>
+	<button onclick="window.location='index.html'">Main Menu</button>
+	<img src="yae.png" alt="Yae Miko from Genshin Impact using Kagura Verity drawn with paint" style="width:auto;>"
 </body>
